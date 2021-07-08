@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>봉황중학교 평균 계산기</title>
+</head>
+<body>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        
+    <script>
+function a() {
+    var 국어 = document.getElementById('국어').value
+    var 영어 = document.getElementById('영어').value
+    var 수학 = document.getElementById('수학').value
+    var 역사 = document.getElementById('역사').value
+    var 과학 = document.getElementById('과학').value
+    var 기가 = document.getElementById('기가').value
+    var 도덕 = document.getElementById('도덕').value
+    var 정보 = document.getElementById('정보').value
+
+    국어 = (국어 / 5) *3 +40
+    영어 = 영어 / 5 *3 +40
+    수학 = 수학 / 5 *3 +40
+    역사 = 역사 / 5 *2 + 60
+    과학 = 과학 / 5 *3 +40
+    기가 = 기가 / 5 *3 +40
+    정보 = 정보 / 5 *3 +40
+    도덕 = 도덕 / 5 *3 +40
+    
+    var 평균 = (국어+영어+수학+역사+과학+기가+정보+도덕)/8
+    document.getElementById('평균').innerText = `당신의 평균 : ${평균}`
+    alert(`당신의 평균은 ${평균}입니다!`)
+
+}
+
+
+
+        
+    </script>
+
+    
+<p><h1>봉황중학교 평균 계산기</h1><p>
+    <p>
+<input id='국어' type='number' max="100" placeholder="국어점수"/>
+</p><p>
+<input id='영어' type='number' max="100" placeholder="영어점수"/>
+</p><p>
+<input id='수학' type='number' max="100" placeholder="수학점수"/>
+</p><p>
+<input id='역사' type='number' max="100" placeholder="역사점수"/>
+</p><p>
+<input id='과학' type='number' max="100" placeholder="과학점수"/>
+</p><p>
+<input id='정보' type='number' max="100" placeholder="정보점수"/>
+</p><p>
+<input id='도덕' type='number' max="100" placeholder="국어점수"/>
+</p><p>
+<input id='기가' type='number' max="100" placeholder="기가점수"/>
+</p><p>
+<input type="button" value="계산하기" onclick="a()">
+</p><p>
+<div id='result'></div>
+</p>
+</p><div id='평균'>당신의 평균 : </div></p>
+
+<h6>모든 점수는 수행평가를 100점을 맞았다는 전제 하에 계산된 결과입니다</h6>
+
+    <a href = https://toss.me/kimsj5025>>>개발자 후원하기<<</a>
+    <dir></dir>
+
+</body>
+</html>
