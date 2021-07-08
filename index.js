@@ -7,7 +7,7 @@ const axios = require("axios");
 
  
 
-  app.get('/', function(req,res) {
+  app.get('/v', function(req,res) {
     
       res.send(fs.readFileSync('./html.html').toString())
 
